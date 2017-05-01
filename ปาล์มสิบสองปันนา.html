@@ -67,22 +67,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Comic Sans MS", sans-serif}
  
 
   <!-- Contact -->
-  <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact">
-    <h3 class="w3-center">Comment</h3>
-    <hr>
-    
-
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-group">
-        <label>Comment</label>
-        <input class="w3-input w3-border" type="text" required="" name="Name">
-      </div>
-      
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br>
-    
-
-  </div>
+  <div id="fb-root"></div>  
+<script>(function(d, s, id) {  
+  var js, fjs = d.getElementsByTagName(s)[0];  
+  if (d.getElementById(id)) {return;}  
+  js = d.createElement(s); js.id = id;  
+  js.src = "//connect.facebook.net/th_TH/all.js#xfbml=1";  
+  fjs.parentNode.insertBefore(js, fjs);  
+}(document, 'script', 'facebook-jssdk'));  
+</script>  
+  
+<!-- ด้านล่างใส่ข้อมูลเกี่ยวกับกล่อง COMMENT ดังนี้  
+data-href คือ URL ของหน้าเว็บเพจที่ต้องการให้มีกล่อง Comment  
+data-num-posts คือ จำนวน Comment ต่อหน้า  
+data-width คือ ความกว้างของกล่อง Comment  
+-->  
+<center><div class="fb-comments" data-href="http://www.codetukyang.com" data-num-posts="20" data-width="500"></div></center>  
 
 <!-- End page content -->
 </div>
